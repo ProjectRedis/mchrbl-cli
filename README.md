@@ -23,6 +23,11 @@ Dibangun dengan arsitektur memori yang brutal, skrip ini mem- *bypass* latensi l
 | **Hardware Counter** | Menghitung presisi waktu berdasarkan kalkulasi offset waktu global dan OS lalu di-lock dengan metode perf-counter. |
 
 ---
+## 📸 Preview
+
+![Hasil Approve](assets/preview-00.png)
+
+---
 
 ## 🛠️ Persiapan (Prerequisites)
 
