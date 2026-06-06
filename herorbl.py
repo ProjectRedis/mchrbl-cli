@@ -330,9 +330,8 @@ def main():
     log("[Active.]", f"Dynamic Bracket ±{bracket_half}ms (Avg Ping: {latency_avg}ms)", Fore.GREEN)
 
     # ========== Distribusi Offset ==========
-    base_offsets = [int(-bracket_half + (2 * bracket_half * i) / (trigger_count - 1)) if trigger_count > 1 else 0 for i in range(trigger_count)]
-    offsets = [offset + random.randint(-5, 10) for offset in base_offsets]
-    
+    safety_margin = 30 
+    base_offsets = [int(-bracket_half + safety_margin + (2 * (bracket_half - safety_margin) * i) / (trigger_count - 1)) if trigger_count > 1 else 0 for i in range(trigger_count)]
     manager = mp.Manager()
     output_dict = manager.dict()
     processes = []
