@@ -38,6 +38,7 @@ TAG_WIDTH = 12
 MSG_WIDTH = 16
 PING_SAMPLES = 5
 BRACKET_FACTOR = 0.8
+CURRENT_VERSION = "v2.3-Rev.2026.06.07"
 
 print_lock = mp.Lock()
 
