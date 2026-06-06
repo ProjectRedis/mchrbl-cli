@@ -38,7 +38,7 @@ TAG_WIDTH = 12
 MSG_WIDTH = 16
 PING_SAMPLES = 5
 BRACKET_FACTOR = 0.8
-CURRENT_VERSION = "v2.3-Rev.2026.06.07"
+CURRENT_VERSION = "v2.3.1-Rev.2026.06.07"
 
 print_lock = mp.Lock()
 
@@ -190,7 +190,7 @@ def check_update():
                 break
 
         if not remote_version:
-            log("[Info.]", "Tidak bisa membaca versi di GitHub.", Fore.YELLOW)
+            log("[Info.]", "Tidak bisa membaca versi di GitHub.", Fore.WHITE)
             return
 
         if remote_version == CURRENT_VERSION:
@@ -221,7 +221,7 @@ def check_update():
                 print(" " * LABEL_WIDTH + line)
 
         except Exception:
-            log("[Info.]", "Changelog tidak ditemukan.", Fore.YELLOW)
+            log("[Info.]", "Changelog tidak ditemukan.", Fore.WHITE)
 
         print()
 
@@ -243,7 +243,7 @@ def check_update():
                     f.write(r3.text)
 
                 log("[Success.]", f"Berhasil update ke {remote_version}", Fore.GREEN)
-                log("[Info.]", "Silakan jalankan ulang script.", Fore.CYAN)
+                log("[Info.]", "Silakan jalankan ulang script.", Fore.WHITE)
 
                 raise SystemExit(0)
 
