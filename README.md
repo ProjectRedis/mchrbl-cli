@@ -33,7 +33,8 @@ Dibangun dengan arsitektur memori yang brutal, skrip ini mem- *bypass* latensi l
 
 Terminal apapun itu
 
-Jika kamu menggunakan **Termux** di Android, jalankan perintah ini terlebih dahulu untuk persiapan:
+Jika kamu menggunakan **Termux** di Android wajib termux versi f-droid atau versi github release karena versi playstore sudah kadaluarsa.
+Jalankan perintah ini terlebih dahulu untuk persiapan:
 ```bash
 pkg update && pkg upgrade -y
 pkg install python git curl -y
