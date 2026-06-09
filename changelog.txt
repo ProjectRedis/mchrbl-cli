@@ -1,11 +1,17 @@
-v3.0.0-2026-06-08
+v3.1.0-Rev.2026.06.09
+Add Multi-language
+- id: Bahasa Indonesia (Default)
+- en: English US
+--------
+v3.0.0-Rev.2026-06-08
 Major Improvement
 - Threading lebih ringan, tidak perlu Manager server process
 - DNS pre-resolve hemat 22-40ms saat war
 - Thread-safe GC semua hero share 1 disable/enable yg aman
 --------
-v2.3-2026-06-07
+v2.3.0-Rev.2026-06-07
 Fix Bug & Optimization
 - Perbaikan untuk kesalahan deteksi Core CPU.
 - Perhitungan average ping menggunakan weighted median.
 - Penambahan safety margin 30ms.
+--------
