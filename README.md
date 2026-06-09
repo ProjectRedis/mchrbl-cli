@@ -1,5 +1,15 @@
 # 🎯 MCHR-BL CLI (Mi-Community Hero Request-BL)
 
+<details>
+  <summary>🌐 <b>Select Language / Pilih Bahasa</b></summary>
+  
+  * [Bahasa Indonesia](README.md)
+  * [English (US)](README.en.md)
+</details>
+
+---
+
+
 ![Python Version](https://img.shields.io/badge/Python-3.8%2B-blue?style=flat-square&logo=python)
 ![Platform](https://img.shields.io/badge/Platform-Termux%20%7C%20Linux%20%7C%20Windows-lightgrey?style=flat-square)
 ![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg?style=flat-square)
