@@ -44,8 +44,8 @@ TAG_WIDTH       = 12
 MSG_WIDTH       = 16
 PING_SAMPLES    = 5
 BRACKET_FACTOR  = 0.8
-SAFETY_MARGIN   = 30
-CURRENT_VERSION = "v3.1.0-Rev.2026.06.09"
+# SAFETY_MARGIN   = 30
+CURRENT_VERSION = "v3.1.1-Rev.2026.06.10"
 
 # ─────────────────────── RUNTIME FLAGS ─────────────────────── #
 print_lock = threading.Lock()
@@ -68,7 +68,7 @@ def init_language() -> None:
     global TEXTS
     
     force_change = "--lang" in sys.argv
-    force_update = "--update-lang" in sys.argv  # <-- FITUR BARU
+    force_update = "--update-lang" in sys.argv
     lang_code = "id"
     
     if not force_change and os.path.exists(LANG_FILE):
@@ -97,7 +97,6 @@ def init_language() -> None:
         
     json_path = os.path.join(LOCALE_DIR, f"{lang_code}.json")
     
-    # ── FITUR BARU: Hapus JSON lama jika pengguna mengetik --update-lang ──
     if force_update and os.path.exists(json_path):
         os.remove(json_path)
         log("[Info.]", "Force updating language pack...", Fore.YELLOW)
@@ -386,7 +385,6 @@ def check_update() -> None:
         with open(script_path, "w", encoding="utf-8") as f:
             f.write(r3.text)
             
-        # ── FITUR BARU: Hapus Cache Bahasa Saat Script Diperbarui ──
         if os.path.exists(LOCALE_DIR):
             import shutil
             shutil.rmtree(LOCALE_DIR, ignore_errors=True)
@@ -642,6 +640,11 @@ def main() -> None:
     ).strip()
     trigger_count = int(raw_count) if raw_count.isdigit() and int(raw_count) > 0 else 4
 
+    raw_margin    = input(
+        colored(f'{"[Input!]":<{LABEL_WIDTH}}', Fore.YELLOW) + _t("input_margin")
+    ).strip()
+    safety_margin = int(raw_margin) if raw_margin.lstrip('-').isdigit() else 30
+    
     # ── 5. Tunggu fase ping ──
     _countdown(_t("wait_start"), target_ms - 15_000, time_base, perf_base, ntp_offset)
 
@@ -663,9 +666,9 @@ def main() -> None:
 
     # ── 7. Hitung offset tiap Hero ──
     if trigger_count > 1:
-        span    = 2.0 * (bracket_half - SAFETY_MARGIN)
+        span    = 2.0 * (bracket_half - safety_margin)
         offsets = [
-            int(-bracket_half + SAFETY_MARGIN + span * i / (trigger_count - 1))
+            int(-bracket_half + safety_margin + span * i / (trigger_count - 1))
             for i in range(trigger_count)
         ]
     else:
@@ -728,3 +731,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+    
