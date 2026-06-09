@@ -1,3 +1,7 @@
+v3.1.1-Rev.2026.06.10
+Small Changes
+- Safety Margin kini bisa di input manual sesuai kebutuhan (default 30ms)
+--------
 v3.1.0-Rev.2026.06.09
 Add Multi-language
 - id: Bahasa Indonesia (Default)
@@ -21,5 +25,5 @@ Major Improvement
 - Script Refactoring
 --------
 v1.0.0-Rev.2026-06-02
-Firs Release
+- First Release
 --------
