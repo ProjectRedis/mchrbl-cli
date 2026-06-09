@@ -20,6 +20,7 @@
   "cookie_reinput": "Please re-enter all credentials.\n",
   "input_debug": " Debug Mode (y/n): ",
   "input_hero": " Recruit Hero (Default 4): ",
+  "input_margin": " Safety Margin (Default 30ms): ",
   "acc_ok": "ELIGIBLE (Ready to War!)",
   "acc_block": "BLOCKED until {}",
   "acc_warn": "Account is less than 30 days old!",
