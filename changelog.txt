@@ -1,29 +1,41 @@
+v3.3.0-Rev.2026.06.10
+[Add New Feature]
+- Doppelganger: Fingerprint & HTTP Header Order kini 100% sama dengan aplikasi "Mi Community" original.
+
+[Stealth Mode & WAF Bypass]
+- Dynamic ID & Cookie Sync: Auto-generate 39-Hex Device ID & Auto Sync id unik tiap Hero via Regex untuk lolos Firewall Anti-Spam.
+- Smart Anti-Bot: Logic "is_retry" dinamis antar-Hero untuk meniru pola manusia saat koneksi lambat.
+
+[Stabilitas & Fix]
+- Gzip Support: Mencegah crash saat membaca respons terkompresi dari server.
+- Socket & Payload Opt: RAW calculation for Content-Length & auto-close connection untuk mencegah thread nyangkut (blocking).
+--------
 v3.1.1-Rev.2026.06.10
-Small Changes
-- Safety Margin kini bisa di input manual sesuai kebutuhan (default 30ms)
+[Small Changes]
+- Safety Margin: kini bisa di input manual sesuai kebutuhan (default 30ms)
 --------
 v3.1.0-Rev.2026.06.09
-Add Multi-language
+[Add Multi-language]
 - id: Bahasa Indonesia (Default)
 - en: English US
 --------
 v3.0.0-Rev.2026-06-08
-Major Improvement
-- Threading lebih ringan, tidak perlu Manager server process
-- DNS pre-resolve hemat 22-40ms saat war
+[Major Improvement]
+- Multi Thread: Threading lebih ringan, tidak perlu Manager server process
+- DNS pre-resolve: Hemat 22-40ms saat war
 - Thread-safe GC semua hero share 1 disable/enable yg aman
 --------
 v2.3.0-Rev.2026-06-07
-Fix Bug & Optimization
+[Fix Bug & Optimization]
 - Perbaikan untuk kesalahan deteksi Core CPU.
 - Perhitungan average ping menggunakan weighted median.
 - Penambahan safety margin 30ms.
 --------
 v2.0.0-Rev.2026-06-05
-Major Improvement
+[Major Improvement]
 - Code Cleanup
 - Script Refactoring
 --------
 v1.0.0-Rev.2026-06-02
-- First Release
+[First Release]
 --------
