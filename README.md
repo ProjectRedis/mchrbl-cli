@@ -67,7 +67,7 @@ ubl-go
 ## 🔑 Cara ambil "Cookie" di Android
 
 1. Install aplikasi network sniffer bebas.
-    **(Proxyman, HTTP Toolkit**, HTTP Sniffer, PCAPdroid)**
+    **(Proxyman, HTTP Toolkit, HTTP Sniffer, PCAPdroid)**
 2. Jalankan aplikasi sniffer
      biasanya akan meminta izin VPN.
 3. Buka aplikasi **Xiaomi Community app**
