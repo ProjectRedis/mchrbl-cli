@@ -39,25 +39,28 @@ Dibangun dengan arsitektur memori yang brutal, skrip ini mem- *bypass* latensi l
 
 ---
 
-## 🛠️ Persiapan (Prerequisites)
+## 🛠️ Tutorial Install (Android)
 
-Terminal apapun itu
+1. Download **Termux** wajib versi [F-Droid](https://f-droid.org/id/packages/com.termux/) atau versi [GitHub Release](https://github.com/termux/termux-app/releases) karena versi playstore sudah kadaluarsa.
 
-Jika kamu menggunakan **Termux** di Android wajib termux versi [F-Droid](https://f-droid.org/id/packages/com.termux/) atau versi [GitHub Release](https://github.com/termux/termux-app/releases) karena versi playstore sudah kadaluarsa.
-Jalankan perintah ini terlebih dahulu untuk persiapan:
+2. Jalankan perintah ini terlebih dahulu untuk persiapan.
+
 ```bash
 termux-setup-storage
 ```
-lalu izinkan dan lanjutkan perintah berikutnya
+3. lalu izinkan dan lanjutkan perintah berikutnya.
+
 ```bash
 pkg update && pkg upgrade -y
 pkg install python git curl -y
 ```
-lalu copy ini di terminal mu
+4. lalu paste ini di termux.
+
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/ProjectRedis/mchrbl-cli/refs/heads/main/install.sh)
 ```
-reload termux mu dan ketik
+5. Reload termux dan ketik.
+
 ```bash
 ubl-go
 ```
@@ -66,18 +69,12 @@ ubl-go
 
 ## 🔑 Cara ambil "Cookie" di Android
 
-1. Install aplikasi network sniffer bebas.
-    **(Proxyman, HTTP Toolkit, HTTP Sniffer, PCAPdroid)**
-2. Jalankan aplikasi sniffer
-     biasanya akan meminta izin VPN.
-3. Buka aplikasi **Xiaomi Community app**
-     masuk ke halaman **Unlock Bootloader** di tab **Me** di pojok kanan bawah.
-4. Setelah itu balik ke aplikasi sniffer
-    matikan VPN atau service nya
-    lalu cari:
-   `"https://sgp-api.buy.mi.com/bbs/api/global/apply/bl-auth"`
-5. Cari di bagian **Headers**
-     apapun yg ada kata `"Cookie:"`. 
+1. Install aplikasi network sniffer bebas: **(Proxyman, HTTP Toolkit, HTTP Sniffer, PCAPdroid)**
+2. Jalankan aplikasi sniffer biasanya akan meminta izin VPN.
+3. Buka aplikasi **Xiaomi Community app** masuk ke halaman **Unlock Bootloader** di tab **Me** di pojok kanan bawah.
+4. Setelah itu balik ke aplikasi sniffer matikan VPN atau service nya
+5. lalu cari: `"https://sgp-api.buy.mi.com/bbs/api/global/apply/bl-auth"`
+6. Cari di bagian **Headers** apapun yg ada kata `"Cookie:"`. 
 6. Salin/Copy text setelah kata `"Cookie:"` dengan awalan `"new_bbs_serviceToken="`.
-7. Tempel/Paste di Terminal nya.
+7. Tempel/Paste di termux.
 8. Selesai
