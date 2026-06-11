@@ -75,9 +75,9 @@ ubl-go
 4. Setelah itu balik ke aplikasi sniffer
     matikan VPN atau service nya
     lalu cari:
-   `https://sgp-api.buy.mi.com/bbs/api/global/apply/bl-auth`
+   `"https://sgp-api.buy.mi.com/bbs/api/global/apply/bl-auth"`
 5. Cari di bagian **Headers**
-     apapun yg ada kata `Cookie:`. 
-6. Salin/Copy text setelah kata `Cookie:` dengan awalan `new_bbs_serviceToken`.
+     apapun yg ada kata `"Cookie:"`. 
+6. Salin/Copy text setelah kata `"Cookie:"` dengan awalan `"new_bbs_serviceToken="`.
 7. Tempel/Paste di Terminal nya.
 8. Selesai
