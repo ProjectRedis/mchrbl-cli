@@ -1,3 +1,7 @@
+v3.3.1-Rev.2026.06.12
+[Fix Small Bug]
+- Token Input: Perbaikan infinte loop saat Dual-Token aktif namun hanya Token B yang valid.
+--------
 v3.3.0-Rev.2026.06.10
 [Add New Feature]
 - Doppelganger: Fingerprint & HTTP Header Order kini 100% sama dengan aplikasi "Mi Community" original.
