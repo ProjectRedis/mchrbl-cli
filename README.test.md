@@ -46,9 +46,7 @@ Dibangun dengan arsitektur memori yang brutal, skrip ini mem- *bypass* latensi l
 ---
 
 <details>
-  <summary> <b>Tutorial Android</b></summary>
-## 🛠️ Tutorial Install (Android)
-
+  <summary><h2><b>🛠️ Tutorial Install (Android)</b></h3></summary>
 1. Download **Termux** wajib versi [F-Droid](https://f-droid.org/id/packages/com.termux/) atau versi [GitHub Release](https://github.com/termux/termux-app/releases) karena versi playstore sudah kadaluarsa.
 
 2. Jalankan perintah ini terlebih dahulu untuk persiapan.
