@@ -26,13 +26,13 @@ Dibangun dengan arsitektur memori yang brutal, skrip ini mem- *bypass* latensi l
 | Fitur | Deskripsi |
 | :--- | :--- |
 | **Doppelganger** | Fingerprint & HTTP Header Order meniru 100% perilaku aplikasi "Mi Community" original. |
-| **Bunshin** | Auto-generate 39-Hex Device ID & Auto Sync Unique ID di tiap Hero via Regex untuk lolos Firewall Xiaomi. |
+| **Chameleon** | Auto-generate 39-Hex Device ID & Auto Sync Unique ID di tiap Hero via Regex untuk lolos Firewall Xiaomi. |
 | **Gungnir** | Raw Socket Execution *payload* HTTP tanpa *overhead* library untuk latensi serendah mungkin. |
-| **Multiprocessing Design** | Terbebas dari Python GIL. Tiap "Hero" berjalan di proses memori yang terisolasi. |
-| **Core Affinity** | Memaksa OS untuk mengikat eksekusi ke *Performance Core* (Anti-Throttle). |
-| **High-Precision Timer** | Sinkronisasi waktu NTP dipadukan dengan resolusi *Hardware Clock* nanodetik. |
-| **Dynamic Latency Bracket** | Menyebar tembakan secara cerdas berdasarkan fluktuasi PING *real-time* ke server. |
-| **Hardware Counter** | Menghitung presisi waktu berdasarkan kalkulasi offset waktu global dan OS dan di-lock dengan metode perf-counter. |
+| **Chronobreak** | Menghitung presisi waktu berdasarkan kalkulasi offset waktu global dan OS dan di-lock dengan metode *perf_counter*. |
+| **Bunshin** | Terbebas dari Python GIL. Tiap "Hero" berjalan di proses memori yang terisolasi. |
+| **Berserk** | Memaksa OS untuk mengikat eksekusi ke *Performance Core* (Anti-Throttle). |
+| **Oracle** | Sinkronisasi waktu NTP dipadukan dengan *Hardware Clock* mode dengan presisi nanosecond. |
+| **Volley** | Menyebar tembakan secara cerdas berdasarkan fluktuasi PING *real-time* ke server. |
 
 ---
 ## 📸 Preview
