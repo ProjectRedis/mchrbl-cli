@@ -25,6 +25,8 @@ Dibangun dengan arsitektur memori yang brutal, skrip ini mem- *bypass* latensi l
 
 | Fitur | Deskripsi |
 | :--- | :--- |
+| **Doppelganger** | Fingerprint & HTTP Header Order meniru 100% perilaku aplikasi "Mi Community" original.
+| **Bunshin** | Auto-generate 39-Hex Device ID & Auto Sync Unique ID di tiap Hero via Regex untuk lolos Firewall Xiaomi.
 | **Raw Socket Execution** | Mengirim *payload* HTTP murni tanpa *overhead* library untuk latensi serendah mungkin. |
 | **Multiprocessing Design** | Terbebas dari Python GIL. Tiap "Hero" berjalan di proses memori yang terisolasi. |
 | **Core Affinity** | Memaksa OS untuk mengikat eksekusi ke *Performance Core* (Anti-Throttle). |
