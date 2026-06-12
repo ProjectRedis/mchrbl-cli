@@ -65,7 +65,7 @@ bash <(curl -s https://raw.githubusercontent.com/ProjectRedis/mchrbl-cli/refs/he
 ubl-go
 ```
 **Catatan:**
-1. Tool nya akan sangat efektif bila dijalan 5-10 menit sebelum waktu war (22:55:00 WIB).
+1. Tool nya akan sangat efektif bila dijalan 5 menit sebelum waktu war (22:55:00 WIB).
 2. Saat ditanya **Mode Debug: y/n** pilih **n**, karena mode debug khusus untuk keperluan testing dan fix bug.
 
 ---
@@ -74,7 +74,7 @@ ubl-go
 
 1. Install aplikasi network sniffer bebas: **([Proxyman](https://play.google.com/store/apps/details?id=com.proxyman.proxymanandroid), [HTTP Toolkit](https://play.google.com/store/apps/details?id=tech.httptoolkit.android.v1), [HTTP Sniffer](https://play.google.com/store/apps/details?id=com.anetcapture.mock), [PCAPdroid](https://play.google.com/store/apps/details?id=com.emanuelef.remote_capture))**
 2. Jalankan aplikasi sniffer biasanya akan meminta izin VPN.
-3. Buka aplikasi **Mi Community** masuk ke halaman **Unlock Bootloader** di tab **Me** di pojok kanan bawah.
+3. Buka aplikasi **[Mi Community](https://play.google.com/store/apps/details?id=com.mi.global.bbs)** masuk ke halaman **Unlock Bootloader** di tab **Me** di pojok kanan bawah.
 4. Setelah itu balik ke aplikasi sniffer matikan VPN atau service nya
 5. lalu cari: `"https://sgp-api.buy.mi.com/bbs/api/global/apply/bl-auth"`
 6. Cari di bagian **Headers** apapun yang ada kata `"Cookie:"`. 
@@ -82,4 +82,4 @@ ubl-go
 7. Tempel/Paste di termux.
 8. Selesai
 
-**Catatan:** Jika menu **Unlock Bootloader** tidak muncul di aplikasi **Mi Community** ubah region ke **Global.**
+**Catatan:** Jika menu **Unlock Bootloader** tidak muncul di aplikasi **[Mi Community](https://play.google.com/store/apps/details?id=com.mi.global.bbs)** ubah region ke **Global.**
