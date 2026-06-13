@@ -94,7 +94,7 @@ def init_language() -> None:
         except Exception:
             pass
     else:
-        print(colored("\n[Input!] Select Language:", Fore.YELLOW))
+        print(colored("\n[Input!] Select Language:", Fore.BLUE))
         for k, v in MENU_BAHASA.items():
             print(f"  [{k}] {v['name']}")
             
@@ -351,7 +351,7 @@ def check_update() -> None:
     log("[Info.]", _t("up_up", remote_version), Fore.WHITE)
     log("[Info.]", _t("up_now", CURRENT_VERSION), Fore.WHITE)
     print()
-    log("[Changelog.]", "", Fore.BLUE)
+    log("[Changelog.]", "", Fore.YELLOW)
 
     try:
         r2 = requests.get(url_changelog, timeout=5)
@@ -390,7 +390,7 @@ def check_update() -> None:
 
     print()
     jawab = input(
-        colored(f'{"[Input!]":<{LABEL_WIDTH}}', Fore.YELLOW) + _t("up_ask")
+        colored(f'{"[Input!]":<{LABEL_WIDTH}}', Fore.BLUE) + _t("up_ask")
     ).strip().lower()
 
     if jawab != "y":
@@ -643,7 +643,7 @@ def main() -> None:
         
         if not valid_a:
             cookie_a = getpass.getpass(
-                colored(f'{"[Input!]":<{LABEL_WIDTH}}', Fore.YELLOW) + _t("cookie_a") + _t("cookie_skip")
+                colored(f'{"[Input!]":<{LABEL_WIDTH}}', Fore.BLUE) + _t("cookie_a") + _t("cookie_skip")
             ).strip()
             
             if cookie_a:
@@ -660,7 +660,7 @@ def main() -> None:
 
         if not valid_b:
             cookie_b = getpass.getpass(
-                colored(f'{"[Input!]":<{LABEL_WIDTH}}', Fore.YELLOW) + _t("cookie_b") + _t("cookie_skip")
+                colored(f'{"[Input!]":<{LABEL_WIDTH}}', Fore.BLUE) + _t("cookie_b") + _t("cookie_skip")
             ).strip()
             
             if cookie_b:
@@ -697,7 +697,7 @@ def main() -> None:
     # ── 4. Konfigurasi jadwal ──
     print()
     debug = (
-        input(colored(f'{"[Input!]":<{LABEL_WIDTH}}', Fore.YELLOW) + _t("input_debug"))
+        input(colored(f'{"[Input!]":<{LABEL_WIDTH}}', Fore.BLUE) + _t("input_debug"))
         .strip().lower() == "y"
     )
     target_ms = (
@@ -707,12 +707,12 @@ def main() -> None:
     )
 
     raw_count     = input(
-        colored(f'{"[Input!]":<{LABEL_WIDTH}}', Fore.YELLOW) + _t("input_hero")
+        colored(f'{"[Input!]":<{LABEL_WIDTH}}', Fore.BLUE) + _t("input_hero")
     ).strip()
     trigger_count = int(raw_count) if raw_count.isdigit() and int(raw_count) > 0 else 4
 
     raw_margin    = input(
-        colored(f'{"[Input!]":<{LABEL_WIDTH}}', Fore.YELLOW) + _t("input_margin")
+        colored(f'{"[Input!]":<{LABEL_WIDTH}}', Fore.BLUE) + _t("input_margin")
     ).strip()
     safety_margin = int(raw_margin) if raw_margin.lstrip('-').isdigit() else 30
     
