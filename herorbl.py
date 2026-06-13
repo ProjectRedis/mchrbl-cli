@@ -642,9 +642,9 @@ def main() -> None:
     while not (valid_a or valid_b):
         
         if not valid_a:
-            label = f"{'[Input!]':<{LABEL_WIDTH}}"
-            prompt = colored(label, Fore.BLUE) + " " + _t("cookie_a") + _t("cookie_skip")
-            cookie_a = getpass.getpass(prompt)
+            cookie_a = getpass.getpass(
+                colored(f'{"[Input!]":<{LABEL_WIDTH}}', Fore.BLUE) + " " + _t("cookie_a") + _t("cookie_skip")
+            ).strip()
             
             if cookie_a:
                 log("[Success.]", _t("cookie_acc", "A") + colored("**********", Fore.WHITE), Fore.GREEN)
@@ -659,9 +659,9 @@ def main() -> None:
         print()
 
         if not valid_b:
-            label = f"{'[Input!]':<{LABEL_WIDTH}}"
-            prompt = colored(label, Fore.BLUE) + " " + _t("cookie_b") + _t("cookie_skip")
-            cookie_b = getpass.getpass(prompt)
+            cookie_b = getpass.getpass(
+                colored(f'{"[Input!]":<{LABEL_WIDTH}}', Fore.BLUE) + " " + _t("cookie_b") + _t("cookie_skip")
+            ).strip()
             
             if cookie_b:
                 log("[Success.]", _t("cookie_acc", "B") + colored("**********", Fore.WHITE), Fore.GREEN)
@@ -680,7 +680,7 @@ def main() -> None:
             
     print()
     log("[Success.]", _t("cookie_ready"), Fore.GREEN)
-
+    
     # ── 2. DNS Pre-resolve ──
     print()
     log("[Check!]", _t("dns_pre_start", SERVER_HOST), Fore.MAGENTA)
@@ -707,12 +707,12 @@ def main() -> None:
     )
 
     raw_count     = input(
-        colored(f'{"[Input!]":<{LABEL_WIDTH}}', Fore.BLUE) + _t("input_hero")
+        colored(f'{"[Input!]":<{LABEL_WIDTH}}', Fore.BLUE) + " " + _t("input_hero")
     ).strip()
     trigger_count = int(raw_count) if raw_count.isdigit() and int(raw_count) > 0 else 4
 
     raw_margin    = input(
-        colored(f'{"[Input!]":<{LABEL_WIDTH}}', Fore.BLUE) + _t("input_margin")
+        colored(f'{"[Input!]":<{LABEL_WIDTH}}', Fore.BLUE) + " " + _t("input_margin")
     ).strip()
     safety_margin = int(raw_margin) if raw_margin.lstrip('-').isdigit() else 30
     
